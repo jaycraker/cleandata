@@ -1,9 +1,14 @@
 library(plyr)
 library(dplyr)
 ## read all data sets-  information only 
+<<<<<<< HEAD
 
 ## to run the program change Insert your path below dir <-"xxxx"
 dir <- "H:/coursera/UCI HAR Dataset"
+=======
+#dir <- "E:/coursera/cleandata/UCI HAR Dataset" 
+dir <- "E:/coursera/UCI HAR Dataset"
+>>>>>>> ec2a90aac6123375dd606e64dfbc2ec557060742
 
 x_train <- read.table(paste(dir,"/train/X_train.txt", sep ="/" ))
 y_train <- read.table(paste(dir, "/train/y_train.txt", sep ="/")) 

@@ -10,6 +10,10 @@ subseting the output from the previous step the mean and STD columns are extract
 
 Subsetting  activities identfied  in activties_label.txt with the y data includes the descriprtive name for each activity creating two columns in the 	y_tt dataset we than name the actvity and subject columns are named respectivly
 The mean and STD, the subject and the activies dataset are now all merged using cbind (column bind)
+<<<<<<< HEAD
 ddply()  from the plyr package summarizes the the average using  colMeans()  
 
 H1  To run the program change Insert your path below dir <-"xxxx"
+=======
+ddply()  from the plyr package summarizes the the average using  colMeans()  
+>>>>>>> ec2a90aac6123375dd606e64dfbc2ec557060742
