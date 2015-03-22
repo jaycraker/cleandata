@@ -13,4 +13,4 @@ The mean and STD, the subject and the activies dataset are now all merged using 
 ddply()  from the plyr package summarizes the the average using  colMeans()  
 
 
-##  To run the program change Insert your path below dir <-"xxxx"
+###  To run the program  Insert your path in the  dir variable - see instruction in program.
