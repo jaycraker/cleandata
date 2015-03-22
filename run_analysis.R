@@ -1,14 +1,9 @@
 library(plyr)
 library(dplyr)
 ## read all data sets-  information only 
-<<<<<<< HEAD
 
-## to run the program change Insert your path below dir <-"xxxx"
+## to run the program insert your path below dir <-"xxxx"
 dir <- "H:/coursera/UCI HAR Dataset"
-=======
-#dir <- "E:/coursera/cleandata/UCI HAR Dataset" 
-dir <- "E:/coursera/UCI HAR Dataset"
->>>>>>> ec2a90aac6123375dd606e64dfbc2ec557060742
 
 x_train <- read.table(paste(dir,"/train/X_train.txt", sep ="/" ))
 y_train <- read.table(paste(dir, "/train/y_train.txt", sep ="/")) 
@@ -45,5 +40,5 @@ names(subject_tt) <- "subject"
 
 combined_data <- cbind(y_tt, select_mn_std , subject_tt)
 avg_data <- ddply(combined_data, c("subject","activity"), numcolwise(mean))
-write.table(avg_data, "E:/averages_data.txt", row.name=FALSE) 
+write.table(avg_data,  "./averages_data.txt", row.name=FALSE) 
 View(avg_data)
